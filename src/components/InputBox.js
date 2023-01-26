@@ -1,4 +1,5 @@
 export default function InputBox({
+  className,
   type = "text",
   placeholder = "empty",
   value = "empty",
@@ -6,16 +7,16 @@ export default function InputBox({
   if (placeholder !== "empty") {
     return (
       <>
-        <div class="inputbox">
-          <input type={type} placeholder={placeholder} />
+        <div className="inputbox">
+          <input className={className} type={type} placeholder={placeholder} />
         </div>
       </>
     );
   } else if (value !== "empty") {
     return (
       <>
-        <div class="inputbox">
-          <input type={type} value={value} />
+        <div className="inputbox">
+          <input className={className} type={type} value={value} />
         </div>
       </>
     );

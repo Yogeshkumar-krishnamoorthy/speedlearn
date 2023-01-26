@@ -1,17 +1,18 @@
 import "./css/Login.css";
 import InputBox from "./InputBox.js";
 
+
 export default function Login() {
   return (
     <>
-      <div class="container">
-        <div class="drop">
-          <div class="content">
-            <h2>login</h2>
+      <div className="container">
+        <div className="drop">
+          <div className="content">
+            <h2>Login</h2>
             <form>
-              <InputBox type="text" placeholder="username" />
-              <InputBox type="password" placeholder="password" />
-              <InputBox type="submit" value="login" />
+              <InputBox className="username" type="text" placeholder="username" />
+              <InputBox className="password" type="password" placeholder="password" />
+              <InputBox className="loginSubmit" type="submit" value="Login" />
             </form>
           </div>
         </div>
